@@ -27,6 +27,11 @@ body {
     width: 100%;
 }
 
+.img {
+    max-width: 150px;
+    height: 150px;
+    background-color: yellow;
+}
 
 /* fine debug */
 
@@ -75,6 +80,8 @@ main {
 
 #esplora {
     width: 100%;
+    padding: 20px;
+    overflow-y: scroll;
 }
 .categorie {
     padding-top: 100px;
@@ -91,6 +98,19 @@ main {
 .categorie_list li {
     width: calc(100% / 4);
     margin-bottom: 2rem;
+}
+
+.recenti h2 {
+    padding-bottom: 20px;
+}
+
+.recenti_list {
+    flex-wrap: wrap;
+}
+
+.brano {
+    width: 50%;
+    padding: 10px;
 }
 footer {
     background-color: var(--gray-f);
@@ -134,10 +154,16 @@ footer {
     .categorie_list li {
         width: calc(100% / 5);
     }
+    .brano {
+        width: 25%;
+    }
 }
 
 @media screen and (min-width: 992px) {
     .categorie_list li {
+        width: calc(100% / 6);
+    }
+    .brano {
         width: calc(100% / 6);
     }
 }
