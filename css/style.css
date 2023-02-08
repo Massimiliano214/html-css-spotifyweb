@@ -51,3 +51,20 @@ footer {
     border: dashed 2px white;
     padding: 10px;
 }
+
+@media screen and (min-width: 576px) {
+    
+}
+
+@media screen and (min-width: 768px) {
+    .col:nth-child(even) {
+        width: calc(100% / 2);
+    }
+    .col:nth-child(odd) {
+        width: calc(100% / 4);
+    }
+}
+
+@media screen and (min-width: 992px) {
+    
+}
