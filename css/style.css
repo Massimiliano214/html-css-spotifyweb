@@ -26,12 +26,19 @@ body {
 }
 
 .libreria {
-    height: 100px;
-    background-color: red;
     width: 100%;
-    overflow-y: scroll;
 }
 
+.playlist {
+    overflow-y: scroll;
+    height: 300px;
+    background-color: red;
+    display: none;
+}
+
+.playlist span {
+    display: block;
+}
 .img {
     max-width: 150px;
     height: 150px;
@@ -146,6 +153,9 @@ footer {
     }
     .categorie_list li {
         width: calc(100% / 3);
+    }
+    .playlist {
+        display: block;
     }
        
 }
