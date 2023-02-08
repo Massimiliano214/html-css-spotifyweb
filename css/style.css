@@ -21,10 +21,15 @@ body {
     height: 100px;
 }
 
+.ul_sopra li {
+    padding: 10px; 
+}
+
 .libreria {
     height: 100px;
     background-color: red;
     width: 100%;
+    overflow-y: scroll;
 }
 
 .img {
@@ -62,6 +67,7 @@ main {
     height: calc(100vh - 100px);
     flex-wrap: wrap;
 }
+
 
 .esplora_header {
  height: 100px;
