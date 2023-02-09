@@ -74,6 +74,7 @@ fine debug */
 main {
     height: calc(100vh - 100px);
     background-color: var(--main-c);
+    overflow: hidden;
 }
 
 .barra_ricerca {
