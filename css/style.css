@@ -46,7 +46,7 @@ body {
 }
 
 .barra_bassa {
-    background-color: yellow;
+    background-color: black;
     height: 100px;
  }
 
@@ -83,7 +83,7 @@ main {
     height: calc(100vh - 100px);
     min-height: 450px;
     flex-wrap: wrap;
-    padding: 1rem 1rem 0;
+    padding-bottom: 1rem;
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -99,8 +99,24 @@ main {
 .image {
     height: 30px;
     vertical-align: middle;
+    
 }
 
+.img_smaller {
+    height: 20px;
+}
+.smaller {
+    font-size: smaller;
+}
+
+.bg_color {
+    background-color: var(--gray-font);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 1px;
+    margin-right: 0.5rem;
+}
 .crea_p h4 {
     color: var(--white);
     padding: 1rem 0 0.5rem;
@@ -111,11 +127,14 @@ main {
     vertical-align: middle;
     padding-right: 0.2rem;
 }
+
 .font_big {
-    height: 50px;
     margin-bottom: 2rem;
 }
 
+.image_big {
+    visibility: hidden;
+}
 .desc_nav {
     display: block;
     text-decoration: none;
@@ -130,18 +149,22 @@ main {
     font-weight: bold;
  }
 
+ .smaller li {
+    display: block;
+ }
  .g_color {
     color: var(--gray-font);
  }
 
+ 
  .border {
-    border-left: 3px solid lime;
-    margin-left: -1rem;
-    
- }
- .padding_left {
-    padding-left: 1rem;
- }
+    padding-left: 10px;
+    margin-top: -3rem;
+}
+ 
+.barra_padding {
+    padding: 10px 10px 0;
+}
 
  #playlist {
     display: flex;
@@ -156,6 +179,9 @@ main {
 
  }
 
+ .none {
+    visibility: hidden;
+ }
  
 .esplora_header {
  height: 100px;
@@ -239,7 +265,29 @@ footer {
     .playlist {
         display: flex;
     }
-       
+    .none {
+        visibility: visible;
+    }
+    .barra_padding {
+        padding: 1rem 1rem 0;
+    }
+    .logo_piccolo {
+        visibility: hidden;
+    }
+    
+    .image_big {
+        visibility: visible;
+        margin-bottom: 2rem;
+        height: 40px;
+        margin-left: -2.2rem;
+        margin-top: 1rem;
+    }
+    .border {
+        border-left: 3px solid lime;
+        padding-left: 1rem;
+        
+            margin-top: -0.8rem;    
+     }
 }
 
 @media screen and (min-width: 768px) {

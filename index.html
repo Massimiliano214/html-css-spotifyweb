@@ -15,39 +15,44 @@
         <aside>
             <nav class="barra_ricerca">
                 <div class="barra_alta">
-                    <section id="logo">
-                        <a href="#">
+                    <section id="logo" class="barra_padding">
+                        <a class="logo_piccolo" href="#">
                             <img class="image font_big" src="img/logo-small.svg" alt="logo spotify">
+                            
                         </a>
+
+                        <a class="none" href="#">
+                            <img class="image image_big" src="img/logo.svg" alt="logo spotify">                            
+                        </a>   
                     </section>
                     
     
                     <section id="naviga">
                         <a class="desc_nav border" href="#">
-                            <img class="image padding_left" src="img/home.svg" alt="home">
-                            <span class="vertical_a">Home</span>
+                            <img class="image" src="img/home.svg" alt="home">
+                            <span class="vertical_a none">Home</span>
                         </a>
     
-                        <a class="desc_nav" href="#">
+                        <a class="desc_nav barra_padding" href="#">
                             <img class="image" src="img/search.svg" alt="ricerca">
-                            <span class="vertical_a g_color">Cerca</span>
+                            <span class="vertical_a g_color none">Cerca</span>
                         </a>
     
-                        <a class="desc_nav" href="#">
+                        <a class="desc_nav barra_padding" href="#">
                             <img class="image" src="img/libreria.svg" alt="libreria">
-                            <span class="vertical_a g_color">La tua libreria</span>
+                            <span class="vertical_a g_color none">La tua libreria</span>
                         </a>
                     </section>
     
-                    <section id="playlist" >
-                        <div class="crea_p">
+                    <section id="playlist" class="barra_padding" >
+                        <div class="crea_p none">
                             <h4>PLAYLIST</h4>
                             <i class="icon_img fa-solid fa-square-plus"></i>
                             <span class="vertical_a g_color">Crea Playlist</span>   
                         </div>
     
-                        <div class="lista_p">
-                            <ul>
+                        <div class="lista_p none">
+                            <ul class="smaller">
                                 <li class="vertical_a g_color">Nome Playlist</li>
                                 <li class="vertical_a g_color">Nome Playlist</li>
                                 <li class="vertical_a g_color">Nome Playlist</li>
@@ -61,8 +66,18 @@
                     </section>
                 </div>
                 
-                <div class="barra_bassa">
-
+                <div class="barra_bassa barra_padding">
+                    <section id="azioni">
+                        <a class="desc_nav" href="#">
+                            <img class="image img_smaller" src="img/download.svg" alt="ricerca">
+                            <span class="vertical_a g_color smaller none">Installa app</span>
+                        </a>
+                        <hr class="none">
+                        <a class="desc_nav" href="#">
+                            <img class="image bg_color" src="img/profile.svg" alt="home">
+                            <span class="vertical_a none">Jhon Doe</span>
+                        </a>
+                    </section>
                 </div>
                 
                 <!--
