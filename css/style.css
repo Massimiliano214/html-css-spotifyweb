@@ -63,7 +63,13 @@ body {
     background-color: yellow;
 }
 
-/* fine debug */
+.barra_bassa {
+    background-color: yellow;
+    height: 100px;
+ }
+
+/* 
+fine debug */
 
 /* inizio utility */
 
@@ -71,6 +77,8 @@ body {
     --gray-f: #2c2c2c;
     --main-c: #1b1f26;
     --black: #000;
+    --white: #fff;
+    --gray-font: #6d6d6d;
 }
 
 .flex {
@@ -91,9 +99,69 @@ main {
     background-color: var(--black);
     height: calc(100vh - 100px);
     flex-wrap: wrap;
+    padding: 1rem 1rem 0;
+    overflow: hidden;
+    flex-direction: column;
 }
 
 
+.barra_alta {
+    height: calc(100% - 100px);
+}
+.image {
+    height: 30px;
+    vertical-align: middle;
+}
+
+.crea_p h4 {
+    color: var(--white);
+    padding: 1rem 0 0.5rem;
+}
+.icon_img {
+    color: var(--gray-font);
+    font-size: 2.5rem;
+    vertical-align: middle;
+    padding-right: 0.2rem;
+}
+.font_big {
+    height: 50px;
+    margin-bottom: 2rem;
+}
+
+.desc_nav {
+    display: block;
+    text-decoration: none;
+    color: var(--white);
+    padding: 10px 0;
+    font-size: 1rem;
+}
+
+ .v_a {
+    vertical-align: middle;
+    display: inline-block;
+    font-weight: bold;
+ }
+
+ .g_color {
+    color: var(--gray-font);
+ }
+
+ .border {
+    border-left: 3px solid lime;
+    margin-left: -1rem;
+    
+ }
+ .padding_left {
+    padding-left: 1rem;
+ }
+
+ .lista_p {
+    padding-top: 1rem;
+    line-height: 2rem;
+    overflow-y: scroll;
+ }
+
+ 
 .esplora_header {
  height: 100px;
  background-color: rgba(0, 0, 0, 0.5);
@@ -178,7 +246,8 @@ footer {
         width: calc(100% / 3);
     }
     .playlist {
-        display: block;
+        display: flex;
+        overflow: hidden;
     }
        
 }
