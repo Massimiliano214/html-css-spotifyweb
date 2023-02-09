@@ -39,10 +39,7 @@ body {
 .playlist span {
     display: block;
 }
-.img {
 
-    background-color: yellow;
-}
 
 .barra_bassa {
     background-color: black;
@@ -247,7 +244,7 @@ main {
     border-bottom: 3px solid lime;
     border-radius: 30px;
   }
-.recenti h2 {
+#recenti h2 {
     padding-bottom: 20px;
     color: var(--white);
 }
@@ -256,6 +253,9 @@ main {
     flex-wrap: wrap;
 }
 
+.per_te_list, .popolari_list {
+    margin-top: 2rem;
+}
 .brano {
     width: 50%;
     padding: 10px;
@@ -278,6 +278,17 @@ main {
     font-weight: bold;
 }
 
+#per_te h2, #popolari h2 {
+    padding-top: 2rem;
+    padding-bottom: 20px;
+    color: var(--white);
+}
+
+.album_tondo {
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: var(--main-c);
+}
 footer {
     background-color: var(--gray-f);
     height: 100px;
