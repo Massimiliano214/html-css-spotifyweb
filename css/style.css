@@ -40,8 +40,7 @@ body {
     display: block;
 }
 .img {
-    max-width: 150px;
-    height: 150px;
+
     background-color: yellow;
 }
 
@@ -228,10 +227,29 @@ main {
 .categorie_list li {
     width: calc(100% / 4);
     margin-bottom: 2rem;
+    list-style-type: none;
+    color: var(--gray-font);
+    font-weight: bolder;
+    font-size: 0.8rem;
 }
 
+.bordo_piccolo {
+    position: relative;
+}
+
+.bordo_piccolo:before {
+    content : "";
+    position: absolute;
+    left: calc(115px / 3);
+    bottom: -5px;
+    height: 1px;
+    width: 30%;
+    border-bottom: 3px solid lime;
+    border-radius: 30px;
+  }
 .recenti h2 {
     padding-bottom: 20px;
+    color: var(--white);
 }
 
 .recenti_list {
@@ -241,7 +259,25 @@ main {
 .brano {
     width: 50%;
     padding: 10px;
+    text-align: center;
 }
+
+.album {
+    width: 100%;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.brano h4 {
+    color: var(--white);
+    margin-bottom: 0.5rem;
+}
+.artista {
+    font-size: 0.8rem;
+    color: var(--gray-font);
+    font-weight: bold;
+}
+
 footer {
     background-color: var(--gray-f);
     height: 100px;
