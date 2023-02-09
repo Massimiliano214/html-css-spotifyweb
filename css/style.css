@@ -226,18 +226,42 @@ main {
     width: calc(100% / 4);
     margin-bottom: 2rem;
     list-style-type: none;
-    color: var(--gray-font);
-    font-weight: bolder;
-    font-size: 0.8rem;
+    
 }
 
 .bordo_piccolo {
     padding-bottom: 5px;
-    border-bottom: 3px solid lime;
-    border-radius: 30px;
-    border-bottom-style: outset;
+    position: relative;
+    
 }
 
+.bordo {
+    text-decoration: none;
+    color: var(--gray-font);
+    font-weight: bolder;
+    font-size: 0.8rem;
+}
+/*
+.li_hov:hover .bordo_hov:before{
+    content : "";
+    position: absolute;
+    left    :  25% ;
+    bottom  : 0;
+    height  : 1px;
+    width   : 50%; 
+    border-bottom: 3px solid lime;
+}
+
+*/
+.bordo_piccolo:before {
+    content : "";
+    position: absolute;
+    left    :  25% ;
+    bottom  : 0;
+    height  : 1px;
+    width   : 50%; 
+    border-bottom: 3px solid lime;
+  }
 
 #recenti h2 {
     padding-bottom: 20px;
