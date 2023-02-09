@@ -252,7 +252,7 @@ main {
     color: var(--white);
 }
 
-.recenti_list {
+.recenti_list, .per_te_list {
     flex-wrap: wrap;
 }
 
@@ -272,7 +272,7 @@ main {
     color: var(--white);
     margin-bottom: 0.5rem;
 }
-.artista {
+.artista, .sottotitolo {
     font-size: 0.8rem;
     color: var(--gray-font);
     font-weight: bold;
