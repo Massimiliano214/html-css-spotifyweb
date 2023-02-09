@@ -231,19 +231,13 @@ main {
 }
 
 .bordo_piccolo {
-    position: relative;
-}
-
-.bordo_piccolo:before {
-    content : "";
-    position: absolute;
-    left: calc(115px / 3);
-    bottom: -5px;
-    height: 1px;
-    width: 30%;
+    padding-bottom: 5px;
     border-bottom: 3px solid lime;
     border-radius: 30px;
-  }
+    border-bottom-style: outset;
+}
+
+
 #recenti h2 {
     padding-bottom: 20px;
     color: var(--white);
@@ -288,6 +282,35 @@ main {
     object-fit: cover;
     border-radius: 50%;
     background-color: var(--main-c);
+}
+
+.img {
+    position: relative;
+}
+
+.layover_border {
+    border-radius: 50%;
+}
+.layover {
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+}
+
+.brano:hover .layover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.icona_colore {
+    color: var(--white);
+    font-size: 2.5rem;
 }
 footer {
     background-color: var(--gray-f);
