@@ -159,6 +159,8 @@ main {
     padding-top: 1rem;
     line-height: 2rem;
     overflow: scroll;
+    display: flex;
+    flex-direction: column;
  }
 
  
