@@ -190,14 +190,24 @@ main {
  position: fixed;
  top: 0;
  left: 50px;
+ padding: 1rem;
 }
 
 .btn {
-    display: block;
-    text-align: right;
-    line-height: 100px;
+    padding: 1rem 2rem;
+    justify-content: flex-end;
+    border: 1px solid var(--white);
+    border-radius: 30px;
+    text-decoration: none;
+    color: var(--white);
+    font-weight: bold;
 }
 
+.allinea {
+    align-items: center;
+    justify-content: flex-end;
+    padding-left: 5rem;
+}
 #esplora {
     width: 100%;
     padding: 20px;
@@ -285,8 +295,7 @@ footer {
     .border {
         border-left: 3px solid lime;
         padding-left: 1rem;
-        
-            margin-top: -0.8rem;    
+        margin-top: -0.8rem;    
      }
 }
 
