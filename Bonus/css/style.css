@@ -395,6 +395,7 @@ footer {
 .azioni {
     flex-direction: column;
     justify-content: center;
+    padding-left: 2px;
 }
 
 .ico_azioni {
