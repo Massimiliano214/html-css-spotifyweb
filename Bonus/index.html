@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <main class="flex">
+        <aside>
+            <nav class="barra_ricerca">
+                <div class="barra_alta">
+                    <section id="logo" class="barra_padding">
+                        <a class="logo_piccolo" href="#">
+                            <img class="image font_big" src="img/logo-small.svg" alt="logo spotify">
+                            
+                        </a>
+
+                        <a class="none" href="#">
+                            <img class="image image_big" src="img/logo.svg" alt="logo spotify">                            
+                        </a>   
+                    </section>
+                    
+    
+                    <section id="naviga">
+                        <a class="desc_nav border" href="#">
+                            <img class="image" src="img/home.svg" alt="home">
+                            <span class="vertical_a none">Home</span>
+                        </a>
+    
+                        <a class="desc_nav barra_padding" href="#">
+                            <img class="image" src="img/search.svg" alt="ricerca">
+                            <span class="vertical_a g_color none">Cerca</span>
+                        </a>
+    
+                        <a class="desc_nav barra_padding" href="#">
+                            <img class="image" src="img/libreria.svg" alt="libreria">
+                            <span class="vertical_a g_color none">La tua libreria</span>
+                        </a>
+                    </section>
+    
+                    <section id="playlist" class="barra_padding" >
+                        <div class="crea_p none">
+                            <h4>PLAYLIST</h4>
+                            <i class="icon_img fa-solid fa-square-plus"></i>
+                            <span class="vertical_a g_color hover_combo">Crea Playlist</span>   
+                        </div>
+    
+                        <div class="lista_p none">
+                            <ul class="smaller">
+                                <li class="vertical_a g_color">Nome Playlist</li>
+                                <li class="vertical_a g_color">Nome Playlist</li>
+                                <li class="vertical_a g_color">Nome Playlist</li>
+                                <li class="vertical_a g_color">Nome Playlist</li>
+                                <li class="vertical_a g_color">Nome Playlist</li>
+                                <li class="vertical_a g_color">Nome Playlist</li>
+                                <li class="vertical_a g_color">Nome Playlist</li>
+                            </ul>
+                            
+                        </div>
+                    </section>
+                </div>
+                
+                <div class="barra_bassa barra_padding">
+                    <section id="azioni">
+                        <a class="desc_nav border_b" href="#">
+                            <img class="image img_smaller" src="img/download.svg" alt="ricerca">
+                            <span class="vertical_a g_color smaller none">Installa app</span>
+                        </a>
+                        
+                        <a class="desc_nav" href="#">
+                            <img class="image bg_color" src="img/profile.svg" alt="home">
+                            <span class="vertical_a none">Jhon Doe</span>
+                        </a>
+                    </section>
+                </div>
+            </nav>
+        </aside>
+
+        <section id="esplora">
+            <div class="esplora_header allinea flex">
+                <a class="btn" href="">EFFETTUA L'UPGRADE</a>
+            </div>
+
+            <nav class="categorie">
+                <ul class="categorie_list flex">
+                    <li class="li_hov"><a class="bordo bordo_piccolo" href="#">IN EVIDENZA</a></li>
+                    <li class="li_hov"><a class="bordo bordo_hov" href="#">PODCAST</a></li>
+                    <li class="li_hov"><a class="bordo bordo_hov" href="#">CLASSIFICHE</a></li>
+                    <li class="li_hov"><a class="bordo bordo_hov" href="#">GENERI E MOOD</a></li>
+                    <li class="li_hov"><a class="bordo bordo_hov" href="#">NUOVE USCITE</a></li>
+                    <li class="li_hov"><a class="bordo bordo_hov" href="#">SCOPRI</a></li>
+                </ul>
+            </nav>
+
+            <section id="recenti">
+                <h2>Recently played</h2>
+
+                <div class="recenti_list flex">
+                    <div class="brano">
+                        <div class="img">
+                            <img class="album" src="img/metal_lifting.jpg" alt="album metal">
+                            <div class="layover">
+                                <i class="icona_colore fa-regular fa-circle-play"></i>
+                            </div>
+                        </div>
+                        <h4>Heavy Metal</h4>
+                        <span class="artista">Subtitle</span>
+                    </div>
+
+                    <div class="brano">
+                        <div class="img">
+                            <img class="album" src="img/stranger.jpeg" alt="album stranger things">
+                            <div class="layover">
+                                <i class="icona_colore fa-regular fa-circle-play"></i>
+                            </div>
+                        </div>
+                        <h4>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h4>
+                        <span class="artista">Kyle Dixon & Michael Stein</span>
+                    </div>
+
+                    <div class="brano">
+                        <div class="img">
+                            <img class="album" src="img/aquietplace.jpeg" alt="album a quiet place">
+                            <div class="layover">
+                                <i class="icona_colore fa-regular fa-circle-play"></i>
+                            </div>
+                        </div>
+                        <h4>A quiet place</h4>
+                        <span class="artista">Subtitle</span>
+                    </div>
+
+                    <div class="brano">
+                        <div class="img">
+                            <img class="album" src="img/split.jpeg" alt=" album split">
+                            <div class="layover">
+                                <i class="icona_colore fa-regular fa-circle-play"></i>
+                            </div>
+                        </div>
+                        <h4>split</h4>
+                        <span class="artista">Subtitle</span>
+                    </div>
+
+                    <div class="brano">
+                        <div class="img">
+                            <img class="album" src="img/cure.jpeg" alt="album a cure">
+                            <div class="layover">
+                                <i class="icona_colore fa-regular fa-circle-play"></i>
+                            </div>
+                        </div>
+                        <h4>A cure for wellness</h4>
+                        <span class="artista">Subtitle</span>
+                    </div>
+
+                    <div class="brano">
+                        <div class="img">
+                            <img class="album" src="img/sinister.jpeg" alt="album sinister">
+                            <div class="layover">
+                                <i class="icona_colore fa-regular fa-circle-play"></i>
+                            </div>
+                        </div>
+                        <h4>Heavy Metal</h4>
+                        <span class="artista">Subtitle</span>
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="per_te">
+                <h2>Creato per John Doe</h2>
+                <span class="sottotitolo">Più ascolti, più accurati saranno i suggerimenti.</span>
+
+                <div class="per_te_list flex">
+                    <div class="brano">
+                        <div class="img">
+                            <img class="album" src="img/radar.jpeg" alt="album per te">
+                            <div class="layover">
+                                <i class="icona_colore fa-regular fa-circle-play"></i>
+                            </div>
+                        </div>
+                        <h4>Release Radar</h4>
+                        
+                    </div>
+
+                    <div class="brano">
+                        <div class="img">
+                            <img class="album" src="img/mixdaily.jpeg" alt="album daily mix">
+                            <div class="layover">
+                                <i class="icona_colore fa-regular fa-circle-play"></i>
+                            </div>
+                        </div>
+                        <h4>Daily Mix 1</h4>
+                    </div>
+                </div>
+            </section>
+            
+
+            <section id="popolari">
+                <h2>Artisti più popolari</h2>
+                <span class="sottotitolo">Più ascolti, più accurati saranno i suggerimenti.</span>
+                <div class="popolari_list flex">
+                    <div class="brano">
+                        <div class="img">
+                            <img class="album album_tondo" src="img/youg.jpeg" alt="album popolare">
+                            <div class="layover layover_border">
+                                <i class="icona_colore fa-regular fa-circle-play"></i>
+                            </div>
+                        </div>
+                        <h4>Lana del Ray</h4>
+                        
+                    </div>
+
+                    <div class="brano">
+                        <div class="img img_radius">
+                            <img class="album album_tondo" src="img/einaudi.jpeg" alt="album popolare 2">
+                            <div class="layover layover_border">
+                                <i class="icona_colore fa-regular fa-circle-play"></i>
+                            </div>
+                        </div>
+                        <h4>Ludovico Einaudi</h4>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container flex flex_between">
+            <div class="canzone flex col">
+                <div class="album_attivo flex">
+                    <img class="album_mini" src="img/sinister.jpeg" alt="album attivo">
+                </div>
+
+                <div class="titolo_autore flex">
+                    <h4>Sinister</h4>
+                    <span>Brano Nome</span>
+                </div>
+
+                <div class="azioni flex">
+                    <i class="ico_azioni fa-regular fa-heart"></i>
+                    <i class="ico_azioni fa-regular fa-folder"></i>
+                </div>
+            </div>
+
+            <div class="barra_rip flex">
+                <div class="tasti_rip">
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="play_b fa-regular fa-circle-play"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-rotate-right"></i>
+
+                </div>
+
+                <div class="sez_barra flex">
+                    <div class="tempo">0:25</div>
+                    
+                    <div class="barra">
+                        <div class="barra_mini">
+                            <div class="punto"></div>
+                        </div>
+                    </div>
+
+                    <div class="tempo">4:35</div>
+                    
+                </div>
+            </div>
+
+            <div class=" volume flex col">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-tv"></i>
+                <i class="fa-solid fa-volume-high"></i>
+                <div class="barra">
+                    <div class="barra_mini">
+                        <div class="punto"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
