@@ -274,7 +274,7 @@ main {
 }
 
 .per_te_list {
-    flex-wrap: wrap;
+    overflow: hidden;
 }
 
 .recenti_list {
@@ -285,7 +285,7 @@ main {
     margin-top: 2rem;
 }
 .brano {
-    width: 50%;
+    min-width: 50%;
     padding: 10px;
     text-align: center;
 }
@@ -538,6 +538,9 @@ footer {
         width: calc(100% / 5);
     }
     .brano {
+        min-width: 25%;
+    }
+    .per_te_list .brano, .popolari_list .brano {
         width: 25%;
     }
     .col {
@@ -566,6 +569,9 @@ footer {
         width: calc(100% / 6);
     }
     .brano {
+        min-width: calc(100% / 6);
+    }
+    .per_te_list .brano, .popolari_list .brano {
         width: calc(100% / 6);
     }
     .categorie_list {
