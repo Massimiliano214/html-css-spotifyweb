@@ -124,12 +124,14 @@ main {
     padding-right: 0.2rem;
 }
 
-.font_big {
-    margin-bottom: 2rem;
-}
+
 
 .image_big {
-    visibility: hidden;
+    display: none;
+}
+
+.border_b {
+    border-bottom: 1px solid var(--black);
 }
 .desc_nav {
     display: block;
@@ -155,7 +157,7 @@ main {
  
  .border {
     padding-left: 10px;
-    margin-top: -3rem;
+    padding-bottom: 0;
 }
  
 .barra_padding {
@@ -176,7 +178,7 @@ main {
  }
 
  .none {
-    visibility: hidden;
+    display: none;
  }
  
 .esplora_header {
@@ -371,20 +373,23 @@ footer {
         display: flex;
     }
     .none {
-        visibility: visible;
+        display: inline-block;
     }
     .barra_padding {
         padding: 1rem 1rem 0;
     }
     .logo_piccolo {
-        visibility: hidden;
+        display: none;
+    }
+    .border_b {
+        border-bottom: 1px solid var(--gray-font);
     }
     
     .image_big {
-        visibility: visible;
+        display: inline-block;
         margin-bottom: 2rem;
         height: 40px;
-        margin-left: -2.2rem;
+        
         margin-top: 1rem;
     }
     .border {
