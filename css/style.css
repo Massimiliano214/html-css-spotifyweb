@@ -63,7 +63,9 @@ fine debug */
     display: flex;
 }
 
-
+.flex_between {
+    justify-content: space-between;
+}
 
 /* fine utility */
 
@@ -352,12 +354,49 @@ footer {
 }
 
 .col {
-    width: calc(100% / 3);
+    width: 200px;
     height: 100px;
-    border: dashed 2px white;
     padding: 10px;
 }
 
+.barra_rip {
+    width: 50%;
+    background-color: red;
+}
+
+.album_mini {
+    width: 100%;
+}
+.album_attivo {
+    width: 70px;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+
+.titolo_autore {
+    justify-content: center;
+    flex-direction: column;
+}
+.titolo_autore h4 {
+    color: var(--white);
+}
+
+.titolo_autore span {
+    color: var(--gray-font);
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.azioni {
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+}
+.ico_azioni {
+    color: var(--gray-font);
+    padding: 5px 0;
+}
 @media screen and (min-width: 576px) {
     .barra_ricerca {
         width: 200px;
@@ -400,17 +439,23 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
-    .col:nth-child(even) {
-        width: calc(100% / 2);
-    }
-    .col:nth-child(odd) {
-        width: calc(100% / 4);
-    }
+    
     .categorie_list li {
         width: calc(100% / 5);
     }
     .brano {
         width: 25%;
+    }
+    .col {
+        width: 230px;
+    }
+    .azioni {
+        flex-direction: row;
+        align-items: center;
+    }
+    .ico_azioni {
+        color: var(--gray-font);
+        padding: 0 5px;
     }
 }
 
