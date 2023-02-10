@@ -58,6 +58,7 @@ fine debug */
     --black: #000;
     --white: #fff;
     --gray-font: #6d6d6d;
+    --barra: #c4fa6c;
 }
 
 .flex {
@@ -99,6 +100,10 @@ main {
     height: 30px;
     vertical-align: middle;
     
+}
+
+.g_color:hover, .icon_img:hover {
+    color: var(--white);
 }
 
 .img_smaller {
@@ -191,7 +196,7 @@ main {
  position: fixed;
  top: 0;
  left: 50px;
- padding: 1rem;
+ padding: 2rem;
  z-index: 999999;
 }
 
@@ -205,6 +210,9 @@ main {
     font-weight: bold;
 }
 
+.btn:hover, .play_b:hover {
+    transform: scale(1.1);
+}
 .allinea {
     align-items: center;
     justify-content: flex-end;
@@ -246,18 +254,10 @@ main {
     font-weight: bolder;
     font-size: 0.8rem;
 }
-/*
-.li_hov:hover .bordo_hov:before{
-    content : "";
-    position: absolute;
-    left    :  25% ;
-    bottom  : 0;
-    height  : 1px;
-    width   : 50%; 
-    border-bottom: 3px solid lime;
-}
 
-*/
+.bordo:hover {
+    color: var(--white);
+}
 .bordo_piccolo:before {
     content : "";
     position: absolute;
@@ -384,20 +384,31 @@ footer {
     font-weight: bold;
 }
 
+.titolo_autore span:hover {
+    text-decoration: underline;
+}
+
 .azioni {
     flex-direction: column;
     justify-content: center;
 }
+
 .ico_azioni {
     color: var(--gray-font);
     padding: 5px 0;
 }
+
+.ico_azioni:hover {
+    color: var(--white);
+}
+
 .barra_rip {
     flex-direction: column;
     align-items: center;
     width: 50%;
     padding: 0 10px;
 }
+
 .tasti_rip i {
     padding-right: 5px;
     color: var(--white);
@@ -430,10 +441,30 @@ footer {
 }
 
 .barra_mini {
-    width: 15%;
+    width: 25%;
     height: 5px;
     background-color: var(--white);
     border-radius: 5px;
+    position: relative;
+}
+
+.punto {
+    height: 15px;
+    width: 15px;
+    background-color: var(--white);
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: -5px;
+    display: none;
+}
+
+.barra:hover .punto {
+    display: block;
+}
+
+.barra:hover .barra_mini {
+    background-color: var(--barra);
 }
 
 .tempo {
@@ -532,5 +563,8 @@ footer {
     }
     .brano {
         width: calc(100% / 6);
+    }
+    .categorie_list {
+        max-width: 80%;
     }
 }
